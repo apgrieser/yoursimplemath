@@ -306,6 +306,18 @@ footer {
     color: var(--sand-color); 
 }
 
+.footer-link {
+    color: var(--bg-cream);
+}
+
+.footer-link:hover {
+    color: var(--sand-color);
+}
+
+.footer-text {
+    padding-bottom: 10px;
+}
+
 /* --- Free Sample Promo Section Additions --- */
 .text-center {
     text-align: center;
