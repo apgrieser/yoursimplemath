@@ -164,7 +164,7 @@ nav a:hover {
 }
 
 /* --- Services, Shop, & About Sections --- */
-.services-section h3, .about-section , .shop-section h3 {
+.services-section h3, .about-section , .shop-section, .contact-section, h3 {
     color: var(--primary-color);
     margin-bottom: 15px; 
     border-bottom: 1px solid var(--bg-cream); 
@@ -202,10 +202,13 @@ nav a:hover {
 
 /* Section with links to shop and free sample */
 .shop-content {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /* font-size:20px; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* font-size:0.9rem; */
     text-align: center;
+    margin-bottom: 12px; 
+    font-size: 0.85rem; 
+    font-weight: 400;
 }
 
 .shop-link {
@@ -216,6 +219,15 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
+.shop-section .button-group {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Prevent the very last button from stretching out the bottom of the white card */
+.shop-section .button-group:last-of-type {
+    margin-bottom: 0;
+}
 
 /* About section */
 .about-content {
@@ -263,7 +275,8 @@ nav a:hover {
 
 .contact-section p {
     font-weight: 400;
-    font-size: 0.9rem; 
+    font-size: 0.95rem; 
+    padding: 10px;
 }
 
 .contact-info {
@@ -278,7 +291,12 @@ nav a:hover {
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.contact-form {
+    width: 500px;
+    height: 600px;
 }
 
 /* --- Footer --- */
