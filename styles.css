@@ -78,7 +78,7 @@ h1 {
 
 nav a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--nav-hover);
     margin-left: 20px;
     font-weight: 500;
     font-size: 0.75rem; 
@@ -86,7 +86,8 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--nav-hover);
+    
+    color: var(--accent-color);
 }
 
 /* --- Hero Section --- */
