@@ -165,7 +165,7 @@ nav a:hover {
 }
 
 /* --- Services, Shop, & About Sections --- */
-.services-section h3, .about-section , .shop-section, .contact-section, h3 {
+.services-section h3, .about-section h3, .shop-section h3, .contact-section h3 {
     color: var(--primary-color);
     margin-bottom: 15px; 
     border-bottom: 1px solid var(--bg-cream); 
