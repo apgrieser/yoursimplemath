@@ -81,22 +81,8 @@ header {
 
 h1 {
     color: var(--header-color);
-    font-size: 1.0rem; 
+    font-size: 0.9rem; 
     font-weight: 600;
-}
-
-.header-logo {
-    flex: 0 0 auto; 
-    width: 180px; 
-    display: flex;
-    justify-content: center;
-}
-
-.header-logo img {
-    width: 100%;
-    max-width: 40px; 
-    border-radius: 50%; /* Makes your circular logo perfectly round */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
 
@@ -347,6 +333,22 @@ footer {
 .social-links a:hover {
     color: var(--sand-color); 
 }
+
+.footer-logo {
+    /* Auto margins perfectly center the block inside the footer */
+    margin: 0 auto 15px auto; 
+    width: 60px; /* A nice, subtle size for a footer logo */
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 100%;
+    max-width: 60px; /* Matches the container */
+    border-radius: 50%; /* Keeps it perfectly round */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Softened shadow for the dark footer */
+}
+
 
 .footer-link {
     color: var(--footer-color);
