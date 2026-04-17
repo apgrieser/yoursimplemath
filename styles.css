@@ -1,12 +1,9 @@
 /* --- Global Styles --- */
 :root {
     /* Official Brand Palette */
-    /* --primary-color: #8596A6; */  /* Dusty Slate Blue */
-    /* --primary-color: #5e2146; Cranberry */
     --primary-color: #a595a2; /*Cranberry */
     --secondary-color: #B2B099; /* Muted Olive Green */
     --accent-color: #C48D83; /* Warm Terracotta Rose */
-    /* --dark-accent: #A595A2; */ /* Soft Plum/Mauve */
     --dark-accent: #6d1c5e; /* Soft Plum/Mauve */
     --sand-color: #D5B099; /* Warm Sand */
     --bg-cream: #F6F3EB; /* Cream Background */
@@ -17,7 +14,6 @@
     --footer-color: #4b2041;
     --footer-hover: #a595a2;
     --contact-color: #6d1c5e; /* Footer at bottom of page */
-    /* --contact-color: #957cad; *//* Footer at bottom of page */
     --nav-color: #6d1c5e;
     --nav-hover: #957cad; /* Hover color on navigation bar */
     --light-gold: #f3f4e3;
