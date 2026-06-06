@@ -17,3 +17,10 @@ test*
 # Node.js (if you decide to use it later)
 node_modules/
 npm-debug.log*
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
