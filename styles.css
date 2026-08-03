@@ -277,25 +277,26 @@ nav a:hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.product-section:hover {
+.products-section:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .product-image {
-    width: 220px;         /* Sets a fixed width */
-    height: 220px;        /* Sets a matching fixed height to create a square */
-    margin: 20px auto 0;  /* Centers the square horizontally and adds 20px spacing at the top */
+    width: 100%;             /* Takes up the width of the product card inner area */
+    max-width: 300px;        /* Keeps it from getting too huge on wide cards */
+    aspect-ratio: 4 / 3;     /* Matches your 3000x2250 image dimensions perfectly */
+    margin: 20px auto 0;      /* Centers the image container inside the card */
     background-color: var(--bg-cream);
     overflow: hidden;
-    border-radius: 8px;   /* Rounds the corners of the image slightly */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Optional: adds a soft shadow to the image */
+    border-radius: 8px;       /* Keeps the smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;    /* Ensures the image fills the square perfectly without squishing or stretching */
+    object-fit: contain;     /* Shows the entire image without cropping any edges */
 }
 
 .product-info {
@@ -369,7 +370,7 @@ nav a:hover {
 
 .about-image img {
     width: 100%;
-    max-width: 120px; 
+    max-width: 150px; 
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.05);
     display: block;
