@@ -185,6 +185,11 @@ nav a:hover {
     font-weight: 600;
 }
 
+.services-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
 .services-list {
     list-style-type: none;
     display: grid;
@@ -223,6 +228,11 @@ nav a:hover {
     font-weight: 400;
 }
 
+.shop-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
 .shop-link {
     color: var(--dark-accent);
 }
@@ -241,11 +251,115 @@ nav a:hover {
     margin-bottom: 0;
 }
 
+/* --- Recommended Products Section --- */
+.products-section h3 {
+    color: var(--dark-accent);
+    margin-bottom: 20px; 
+    border-bottom: 1px solid var(--bg-cream); 
+    padding-bottom: 8px;
+    font-size: 1.1rem; 
+    font-weight: 600;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.product-card {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.product-image {
+    width: 220px;         /* Sets a fixed width */
+    height: 220px;        /* Sets a matching fixed height to create a square */
+    margin: 20px auto 0;  /* Centers the square horizontally and adds 20px spacing at the top */
+    background-color: var(--bg-cream);
+    overflow: hidden;
+    border-radius: 8px;   /* Rounds the corners of the image slightly */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Optional: adds a soft shadow to the image */
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* Ensures the image fills the square perfectly without squishing or stretching */
+}
+
+.product-info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.product-info h4 {
+    color: var(--hero-heading-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+/* Main product list styling */
+.product-description-list {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-bottom: 18px;
+    line-height: 1.4;
+    padding-left: 20px; /* Creates the initial indentation for the main bullets */
+}
+
+/* Spacing between list items */
+.product-description-list li {
+    margin-bottom: 6px; 
+}
+
+/* Styling specifically for the nested sublist */
+.product-description-list ul {
+    padding-left: 20px; /* Indents the sublist further to the right */
+    margin-top: 4px;    /* Adds a little breathing room above the sublist */
+    margin-bottom: 4px; /* Adds a little breathing room below the sublist */
+    list-style-type: circle; /* Changes the solid bullet to a hollow circle for sub-items */
+}
+
+.product-btn {
+    align-self: center; /* Centers the button horizontally within the product card */
+    width: fit-content; /* Adjusts the button width to fit its content */
+    font-size: 0.8rem;
+    padding: 8px 16px;
+}
+
+
 /* About section */
 .about-content {
     display: flex;
     gap: 25px; 
     align-items: center; 
+}
+
+.about-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .about-image {
