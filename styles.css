@@ -7,15 +7,19 @@
     --dark-accent: #6d1c5e; /* Soft Plum/Mauve */
     --sand-color: #D5B099; /* Warm Sand */
     --bg-cream: #F6F3EB; /* Cream Background */
+    --bg-violet: #ecd7e8 ;
     /* --footer-color: #4b2041;*/ /* Dark cranberry */
-    --header-bg-color: #f5eaf4; 
-    --header-color: #4b2041;
-    --footer-bg-color: #f5eaf4; 
-    --footer-color: #4b2041;
-    --footer-hover: #a595a2;
+    --header-bg-color: #8596a6; 
+    --header-color: #f3f4e3;
+    /* --footer-bg-color: #f5eaf4;  */
+    --footer-bg-color: #8596a6;
+    /* --footer-color: #4b2041; */
+    --footer-color: #F6F3EB;
+    /* --footer-hover: #a595a2; */
+    --footer-hover: #4b2041 ;
     --contact-color: #6d1c5e; /* Footer at bottom of page */
-    --nav-color: #6d1c5e;
-    --nav-hover: #957cad; /* Hover color on navigation bar */
+    --nav-color: #f3f4e3;
+    --nav-hover: #6d1c5e; /* Hover color on navigation bar */
     --light-gold: #f3f4e3;
     --hero-heading-color: #4b2041;
     --dusty-slate-blue: #8596a6;
@@ -40,7 +44,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     line-height: 1.4; 
-    background-color: var(--bg-cream); /* Using your official cream background */
+    background-color: var(--bg-violet); /* Using your official cream background */
+    /* background-color: var(--bg-cream); Using your official cream background */
     font-weight: 400;
     font-size: 0.95rem; 
 }
@@ -219,11 +224,11 @@ nav a:hover {
 }
 
 .shop-link {
-    color: var(--primary-color);
+    color: var(--dark-accent);
 }
 
 .shop-link:hover {
-    color: var(--secondary-color);
+    color: var(--accent-color);
 }
 
 .shop-section .button-group {
@@ -352,7 +357,7 @@ footer {
 }
 
 .footer-link:hover {
-    color: var(--footer-hover);
+    color: var(--sand-color);
 }
 
 .footer-text {
