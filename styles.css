@@ -1,35 +1,30 @@
 /* --- Global Styles --- */
 :root {
     /* Official Brand Palette */
-    --primary-color: #a595a2; /*Cranberry */
+    --primary-color: #a595a2; /* Cranberry */
     --secondary-color: #B2B099; /* Muted Olive Green */
     --accent-color: #C48D83; /* Warm Terracotta Rose */
     --dark-accent: #6d1c5e; /* Soft Plum/Mauve */
     --sand-color: #D5B099; /* Warm Sand */
     --bg-cream: #F6F3EB; /* Cream Background */
-    --bg-violet: #ecd7e8 ;
-    /* --footer-color: #4b2041;*/ /* Dark cranberry */
+    --bg-violet: #ecd7e8;
     --header-bg-color: #8596a6; 
     --header-color: #f3f4e3;
-    /* --footer-bg-color: #f5eaf4;  */
     --footer-bg-color: #8596a6;
-    /* --footer-color: #4b2041; */
     --footer-color: #F6F3EB;
-    /* --footer-hover: #a595a2; */
-    --footer-hover: #4b2041 ;
-    --contact-color: #6d1c5e; /* Footer at bottom of page */
+    --footer-hover: #4b2041;
+    --contact-color: #6d1c5e; 
     --nav-color: #f3f4e3;
-    --nav-hover: #6d1c5e; /* Hover color on navigation bar */
+    --nav-hover: #6d1c5e; 
     --light-gold: #f3f4e3;
     --hero-heading-color: #4b2041;
     --dusty-slate-blue: #8596a6;
 
     /* Functional Colors */
-    --text-color: #4a5568; /* Dark gray for high contrast/readability */
+    --text-color: #4a5568; 
     --white: #ffffff;
 }
 
-/* Base font size - scaled down to 14px to make everything globally smaller */
 html {
     font-size: 20px; 
 }
@@ -44,14 +39,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     line-height: 1.4; 
-    background-color: var(--bg-violet); /* Using your official cream background */
-    /* background-color: var(--bg-cream); Using your official cream background */
+    background-color: var(--bg-violet);
     font-weight: 400;
     font-size: 0.95rem; 
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -62,7 +56,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
     margin-bottom: 30px;
-    border-top: 4px solid var(--primary-color); /* Adds a subtle branded touch to the cards */
+    border-top: 4px solid var(--primary-color);
 }
 
 /* --- Header --- */
@@ -87,7 +81,6 @@ h1 {
     font-weight: 600;
 }
 
-
 nav a {
     text-decoration: none;
     color: var(--nav-color);
@@ -103,7 +96,7 @@ nav a:hover {
 
 /* --- Hero Section --- */
 .hero {
-    background-color: var(--white); /* Crisp white contrasts well against the cream body */
+    background-color: var(--white);
     padding: 40px 0 50px 0; 
     margin-bottom: 30px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
@@ -150,18 +143,18 @@ nav a:hover {
 .hero-image img {
     width: 100%;
     max-width: 180px; 
-    border-radius: 50%; /* Makes your circular logo perfectly round */
+    border-radius: 50%;
     box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
 .hero-cta-container {
     text-align: center;
-    margin-top: 40px; 
+    margin-top: 30px; 
 }
 
 .cta-button {
     display: inline-block;
-    background-color: var(--accent-color); /* Terracotta Rose */
+    background-color: var(--accent-color);
     color: var(--white);
     padding: 10px 22px; 
     border-radius: 30px; 
@@ -169,26 +162,23 @@ nav a:hover {
     font-weight: 500;
     font-size: 0.85rem; 
     transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
-    background-color: #b07c72; /* Slightly darker Terracotta on hover */
+    background-color: #b07c72;
     transform: translateY(-2px);
 }
 
-/* --- Services, Shop, & About Sections --- */
-.services-section h3, .about-section h3, .shop-section h3, .contact-section h3 {
+/* --- Services & About --- */
+.services-section h3, .about-section h3, .products-section h3 {
     color: var(--dark-accent);
     margin-bottom: 15px; 
     border-bottom: 1px solid var(--bg-cream); 
     padding-bottom: 8px;
     font-size: 1.1rem; 
     font-weight: 600;
-}
-
-.services-section:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .services-list {
@@ -217,60 +207,31 @@ nav a:hover {
     color: var(--primary-color);
 }
 
-
-/* Section with links to shop and free sample */
-.shop-content {
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
-    /* font-size:0.9rem; */
-    text-align: center;
-    margin-bottom: 12px; 
-    font-size: 0.85rem; 
-    font-weight: 400;
-}
-
-.shop-section:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
-
-.shop-link {
-    color: var(--dark-accent);
-}
-
-.shop-link:hover {
-    color: var(--accent-color);
-}
-
-.shop-section .button-group {
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-/* Prevent the very last button from stretching out the bottom of the white card */
-.shop-section .button-group:last-of-type {
-    margin-bottom: 0;
-}
-
-/* --- Recommended Products Section --- */
-.products-section h3 {
-    color: var(--dark-accent);
-    margin-bottom: 20px; 
-    border-bottom: 1px solid var(--bg-cream); 
-    padding-bottom: 8px;
-    font-size: 1.1rem; 
-    font-weight: 600;
-}
-
+/* --- Responsive 3-Column Product Catalog Grid --- */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     gap: 25px;
-    margin-top: 15px;
+    margin-top: 20px;
+}
+/* Large Phones (Landscape) */
+@media (min-width: 500px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets Portrait (e.g., iPad at 768px) & Up */
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .product-card {
     background-color: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -278,34 +239,35 @@ nav a:hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.products-section:hover {
+.product-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 .product-image {
-    width: 100%;             /* Takes up the width of the product card inner area */
-    max-width: 300px;        /* Keeps it from getting too huge on wide cards */
-    aspect-ratio: 4 / 3;     /* Matches your 3000x2250 image dimensions perfectly */
-    margin: 20px auto 0;      /* Centers the image container inside the card */
+    width: 100%;
+    aspect-ratio: 4 / 3;
     background-color: var(--bg-cream);
     overflow: hidden;
-    border-radius: 8px;       /* Keeps the smooth rounded corners */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    cursor: pointer; /* Displays pointer cursor on hover */
+}
+
+.product-image:hover img {
+    transform: scale(1.04); /* Subtle zoom effect on image hover */
 }
 
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;     /* Shows the entire image without cropping any edges */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth hover transition */
 }
 
 .product-info {
-    padding: 18px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: space-between;
 }
 
 .product-info h4 {
@@ -318,55 +280,74 @@ nav a:hover {
 .product-description {
     font-size: 0.8rem;
     color: var(--text-color);
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     line-height: 1.4;
 }
 
-/* Main product list styling */
-.product-description-list {
-    font-size: 0.8rem;
+/* Specs Table Styling */
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+}
+
+.specs-table td {
+    padding: 4px 0;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.specs-table td:first-child {
+    font-weight: 600;
+    color: var(--primary-color);
+    width: 35%;
+}
+
+/* GEO/AEO Question & Answer Capsule */
+.geo-qa {
+    background-color: var(--bg-cream);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.geo-qa h5 {
+    font-size: 0.78rem;
+    color: var(--dark-accent);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.geo-qa p {
+    font-size: 0.75rem;
     color: var(--text-color);
-    margin-bottom: 18px;
-    line-height: 1.4;
-    padding-left: 20px; /* Creates the initial indentation for the main bullets */
+    line-height: 1.35;
 }
 
-/* Spacing between list items */
-.product-description-list li {
-    margin-bottom: 6px; 
-}
-
-/* Styling specifically for the nested sublist */
-.product-description-list ul {
-    padding-left: 20px; /* Indents the sublist further to the right */
-    margin-top: 4px;    /* Adds a little breathing room above the sublist */
-    margin-bottom: 4px; /* Adds a little breathing room below the sublist */
-    list-style-type: circle; /* Changes the solid bullet to a hollow circle for sub-items */
+.buy-wrapper {
+    margin-top: auto;
+    text-align: center;
 }
 
 .product-btn {
-    align-self: center; /* Centers the button horizontally within the product card */
-    width: fit-content; /* Adjusts the button width to fit its content */
+    width: 100%;
+    text-align: center;
     font-size: 0.8rem;
-    padding: 8px 16px;
+    padding: 10px 16px;
+    border-radius: 20px;
 }
 
-
-/* About section */
+/* --- About Section --- */
 .about-content {
     display: flex;
     gap: 25px; 
     align-items: center; 
 }
 
-.about-section:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
-
 .about-image {
     flex: 0 0 auto; 
-    width: 120px; /* Slightly larger for a personal photo */
+    width: 120px;
 }
 
 .about-image img {
@@ -389,7 +370,7 @@ nav a:hover {
 
 /* --- Contact Section --- */
 .contact-section {
-    background-color: var(--contact-color); /* Dusty Slate Blue */
+    background-color: var(--contact-color);
     color: var(--white);
     text-align: center;
     padding: 40px 20px; 
@@ -405,26 +386,6 @@ nav a:hover {
     font-weight: 400;
     font-size: 0.95rem; 
     padding: 10px;
-}
-
-.contact-info {
-    margin-top: 15px;
-    font-size: 0.95rem; 
-}
-
-.contact-info a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.contact-info a:hover {
-    text-decoration: none;
-}
-
-.contact-form {
-    width: 500px;
-    height: 600px;
 }
 
 /* --- Footer --- */
@@ -453,20 +414,18 @@ footer {
 }
 
 .footer-logo {
-    /* Auto margins perfectly center the block inside the footer */
     margin: 0 auto 15px auto; 
-    width: 60px; /* A nice, subtle size for a footer logo */
+    width: 60px;
     display: flex;
     justify-content: center;
 }
 
 .footer-logo img {
     width: 100%;
-    max-width: 60px; /* Matches the container */
-    border-radius: 50%; /* Keeps it perfectly round */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Softened shadow for the dark footer */
+    max-width: 60px; 
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-
 
 .footer-link {
     color: var(--footer-color);
@@ -481,11 +440,6 @@ footer {
     padding-bottom: 10px;
 }
 
-/* --- Free Sample Promo Section Additions --- */
-.text-center {
-    text-align: center;
-}
-
 .button-group {
     display: flex;
     gap: 15px;
@@ -493,29 +447,16 @@ footer {
     flex-wrap: wrap; 
 }
 
-/* Styles the secondary button using your Muted Olive Green */
 .secondary-button {
     background-color: var(--secondary-color); 
     color: var(--white);
 }
 
 .secondary-button:hover {
-    background-color: #9c9a83; /* Slightly darker olive for the hover state */
+    background-color: #9c9a83;
 }
 
-/* =========================================
-   Responsive Design Breakpoints
-   ========================================= */
-
-@media (max-width: 1024px) {
-    html {
-        font-size: 13px; 
-    }
-    .about-content {
-        gap: 20px;
-    }
-}
-
+/* --- Responsive Breakpoints --- */
 @media (max-width: 768px) {
     html {
         font-size: 12px; 
@@ -527,45 +468,259 @@ footer {
     nav a {
         margin: 0 8px;
     }
-    .hero {
-        padding: 20px 0;
-    }
-    .hero-cta-container {
-        margin-top: 40px; 
-    }
-    .services-list {
-        grid-template-columns: 1fr; 
-    }
-    .card {
-        padding: 20px 15px; 
-    }
-}
-
-@media (max-width: 400px) {
-    html {
-        font-size: 11px; 
-    }
     .hero-content {
         flex-direction: column;
         text-align: center;
     }
     .hero-text {
-        max-width: 100%; 
-        text-align: center; 
-        margin-bottom: 10px; 
-    }
-    .about-content {
-        flex-direction: column; 
         text-align: center;
     }
-    .about-image {
-        flex: auto; 
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
+    .services-list {
+        grid-template-columns: 1fr; 
     }
-    .about-text {
-        text-align: left; 
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* --- Modal Styling --- */
+.modal {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 850px;
+    width: 90%;
+    margin: auto; /* Centers the dialog natively */
+    padding: 0;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.modal-inner {
+    position: relative;
+    padding: 30px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    color: var(--dark-accent);
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.modal-image-col {
+    background-color: var(--bg-cream);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image-col img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.modal-content-col h3 {
+    color: var(--hero-heading-color);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.modal-description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+#modal-extra-content {
+    margin-bottom: 20px;
+}
+
+/* Modal Responsive Desktop Layout */
+@media (min-width: 768px) {
+    .modal-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+/* --- Dual Card Buttons --- */
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; /* Pushes the buttons to the very bottom of the card */
+}
+
+.card-buttons .product-btn {
+    flex: 1; /* Makes both buttons take up exactly 50% of the available width */
+    padding: 10px 5px; /* Slightly tighter padding to fit the text on smaller screens */
+    font-size: 0.75rem;
+}
+
+/* Tablet Landscape to Desktop (Keeps text smaller when 3-columns first trigger) */
+@media (max-width: 1024px) {
+    html {
+        font-size: 14px; 
+    }
+}
+
+/* --- Category Filters --- */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+.category-select {
+    background-color: var(--bg-cream);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    padding: 10px 40px 10px 16px; /* Extra right padding for the custom arrow */
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    appearance: none; /* Removes default OS styling */
+    /* Injects a custom downward chevron colored to match --dark-accent (#6d1c5e) */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236d1c5e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    text-transform: capitalize;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: border-color 0.2s ease;
+}
+
+.category-select:focus {
+    border-color: var(--dark-accent);
+}
+
+/* --- Thank You Page Styles --- */
+.thank-you-container {
+    max-width: 900px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.thank-you-card {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.thank-you-card h2 {
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.lead-text {
+    font-size: 1rem;
+    color: var(--text-color);
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    line-height: 1.6;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--bg-cream, #f5f5f5);
+    margin: 30px 0;
+}
+
+.thank-you-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    text-align: left;
+}
+
+.info-block {
+    background-color: var(--bg-cream, #fdfbf7);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.info-block h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: var(--dark-accent, #6d1c5e);
+    font-size: 1.1rem;
+}
+
+.blueprint-list {
+    padding-left: 18px;
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.blueprint-list li {
+    margin-bottom: 10px;
+}
+
+.substack-block p {
+    font-size: 0.88rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.substack-embed-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.thank-you-footer {
+    text-align: center;
+}
+
+.thank-you-footer p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive adjustments for Thank You page */
+@media (max-width: 768px) {
+    .thank-you-grid {
+        grid-template-columns: 1fr;
     }
 }

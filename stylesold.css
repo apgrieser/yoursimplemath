@@ -1,0 +1,571 @@
+/* --- Global Styles --- */
+:root {
+    /* Official Brand Palette */
+    --primary-color: #a595a2; /*Cranberry */
+    --secondary-color: #B2B099; /* Muted Olive Green */
+    --accent-color: #C48D83; /* Warm Terracotta Rose */
+    --dark-accent: #6d1c5e; /* Soft Plum/Mauve */
+    --sand-color: #D5B099; /* Warm Sand */
+    --bg-cream: #F6F3EB; /* Cream Background */
+    --bg-violet: #ecd7e8 ;
+    /* --footer-color: #4b2041;*/ /* Dark cranberry */
+    --header-bg-color: #8596a6; 
+    --header-color: #f3f4e3;
+    /* --footer-bg-color: #f5eaf4;  */
+    --footer-bg-color: #8596a6;
+    /* --footer-color: #4b2041; */
+    --footer-color: #F6F3EB;
+    /* --footer-hover: #a595a2; */
+    --footer-hover: #4b2041 ;
+    --contact-color: #6d1c5e; /* Footer at bottom of page */
+    --nav-color: #f3f4e3;
+    --nav-hover: #6d1c5e; /* Hover color on navigation bar */
+    --light-gold: #f3f4e3;
+    --hero-heading-color: #4b2041;
+    --dusty-slate-blue: #8596a6;
+
+    /* Functional Colors */
+    --text-color: #4a5568; /* Dark gray for high contrast/readability */
+    --white: #ffffff;
+}
+
+/* Base font size - scaled down to 14px to make everything globally smaller */
+html {
+    font-size: 20px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    line-height: 1.4; 
+    background-color: var(--bg-violet); /* Using your official cream background */
+    /* background-color: var(--bg-cream); Using your official cream background */
+    font-weight: 400;
+    font-size: 0.95rem; 
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 30px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    margin-bottom: 30px;
+    border-top: 4px solid var(--primary-color); /* Adds a subtle branded touch to the cards */
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--header-bg-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+}
+
+h1 {
+    color: var(--header-color);
+    font-size: 0.9rem; 
+    font-weight: 600;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-color);
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 0.58rem; 
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--nav-hover);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: var(--white); /* Crisp white contrasts well against the cream body */
+    padding: 40px 0 50px 0; 
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.hero-main-heading {
+    text-align: center;
+    font-size: 1.5rem; 
+    color: var(--hero-heading-color);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+    max-width: 850px; 
+    margin: 0 auto; 
+    gap: 40px; 
+}
+
+.hero-text {
+    flex: 1 1 auto; 
+    max-width: 500px; 
+    text-align: left; 
+}
+
+.pitch {
+    font-size: 0.95rem; 
+    margin-bottom: 0; 
+    font-weight: 400; 
+    padding-bottom: 12px;
+}
+
+.hero-image {
+    flex: 0 0 auto; 
+    width: 180px; 
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 180px; 
+    border-radius: 50%; /* Makes your circular logo perfectly round */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.hero-cta-container {
+    text-align: center;
+    margin-top: 40px; 
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color); /* Terracotta Rose */
+    color: var(--white);
+    padding: 10px 22px; 
+    border-radius: 30px; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #b07c72; /* Slightly darker Terracotta on hover */
+    transform: translateY(-2px);
+}
+
+/* --- Services, Shop, & About Sections --- */
+.services-section h3, .about-section h3, .shop-section h3, .contact-section h3 {
+    color: var(--dark-accent);
+    margin-bottom: 15px; 
+    border-bottom: 1px solid var(--bg-cream); 
+    padding-bottom: 8px;
+    font-size: 1.1rem; 
+    font-weight: 600;
+}
+
+.services-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.services-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+}
+
+.services-list li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.85rem; 
+}
+
+.services-list li::before {
+    content: '✓';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+}
+
+.services-list strong {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+
+/* Section with links to shop and free sample */
+.shop-content {
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* font-size:0.9rem; */
+    text-align: center;
+    margin-bottom: 12px; 
+    font-size: 0.85rem; 
+    font-weight: 400;
+}
+
+.shop-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.shop-link {
+    color: var(--dark-accent);
+}
+
+.shop-link:hover {
+    color: var(--accent-color);
+}
+
+.shop-section .button-group {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Prevent the very last button from stretching out the bottom of the white card */
+.shop-section .button-group:last-of-type {
+    margin-bottom: 0;
+}
+
+/* --- Recommended Products Section --- */
+.products-section h3 {
+    color: var(--dark-accent);
+    margin-bottom: 20px; 
+    border-bottom: 1px solid var(--bg-cream); 
+    padding-bottom: 8px;
+    font-size: 1.1rem; 
+    font-weight: 600;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.product-card {
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.products-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.product-image {
+    width: 100%;             /* Takes up the width of the product card inner area */
+    max-width: 300px;        /* Keeps it from getting too huge on wide cards */
+    aspect-ratio: 4 / 3;     /* Matches your 3000x2250 image dimensions perfectly */
+    margin: 20px auto 0;      /* Centers the image container inside the card */
+    background-color: var(--bg-cream);
+    overflow: hidden;
+    border-radius: 8px;       /* Keeps the smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;     /* Shows the entire image without cropping any edges */
+}
+
+.product-info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.product-info h4 {
+    color: var(--hero-heading-color);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+/* Main product list styling */
+.product-description-list {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-bottom: 18px;
+    line-height: 1.4;
+    padding-left: 20px; /* Creates the initial indentation for the main bullets */
+}
+
+/* Spacing between list items */
+.product-description-list li {
+    margin-bottom: 6px; 
+}
+
+/* Styling specifically for the nested sublist */
+.product-description-list ul {
+    padding-left: 20px; /* Indents the sublist further to the right */
+    margin-top: 4px;    /* Adds a little breathing room above the sublist */
+    margin-bottom: 4px; /* Adds a little breathing room below the sublist */
+    list-style-type: circle; /* Changes the solid bullet to a hollow circle for sub-items */
+}
+
+.product-btn {
+    align-self: center; /* Centers the button horizontally within the product card */
+    width: fit-content; /* Adjusts the button width to fit its content */
+    font-size: 0.8rem;
+    padding: 8px 16px;
+}
+
+
+/* About section */
+.about-content {
+    display: flex;
+    gap: 25px; 
+    align-items: center; 
+}
+
+.about-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.about-image {
+    flex: 0 0 auto; 
+    width: 120px; /* Slightly larger for a personal photo */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 150px; 
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    display: block;
+}
+
+.about-text {
+    flex: 1; 
+}
+
+.about-text p {
+    margin-bottom: 12px; 
+    font-size: 0.85rem; 
+    font-weight: 400;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    background-color: var(--contact-color); /* Dusty Slate Blue */
+    color: var(--white);
+    text-align: center;
+    padding: 40px 20px; 
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.2rem; 
+}
+
+.contact-section p {
+    font-weight: 400;
+    font-size: 0.95rem; 
+    padding: 10px;
+}
+
+.contact-info {
+    margin-top: 15px;
+    font-size: 0.95rem; 
+}
+
+.contact-info a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: none;
+}
+
+.contact-form {
+    width: 500px;
+    height: 600px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--footer-bg-color); 
+    color: #ffffff; 
+    text-align: center;
+    padding: 30px 20px; 
+    font-size: 0.8rem; 
+    font-weight: 400;
+}
+
+.social-links {
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: var(--footer-color); 
+    font-size: 1.1rem; 
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--sand-color); 
+}
+
+.footer-logo {
+    /* Auto margins perfectly center the block inside the footer */
+    margin: 0 auto 15px auto; 
+    width: 60px; /* A nice, subtle size for a footer logo */
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 100%;
+    max-width: 60px; /* Matches the container */
+    border-radius: 50%; /* Keeps it perfectly round */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Softened shadow for the dark footer */
+}
+
+
+.footer-link {
+    color: var(--footer-color);
+}
+
+.footer-link:hover {
+    color: var(--sand-color);
+}
+
+.footer-text {
+    color: var(--footer-color);
+    padding-bottom: 10px;
+}
+
+/* --- Free Sample Promo Section Additions --- */
+.text-center {
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+/* Styles the secondary button using your Muted Olive Green */
+.secondary-button {
+    background-color: var(--secondary-color); 
+    color: var(--white);
+}
+
+.secondary-button:hover {
+    background-color: #9c9a83; /* Slightly darker olive for the hover state */
+}
+
+/* =========================================
+   Responsive Design Breakpoints
+   ========================================= */
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 13px; 
+    }
+    .about-content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px; 
+    }
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav a {
+        margin: 0 8px;
+    }
+    .hero {
+        padding: 20px 0;
+    }
+    .hero-cta-container {
+        margin-top: 40px; 
+    }
+    .services-list {
+        grid-template-columns: 1fr; 
+    }
+    .card {
+        padding: 20px 15px; 
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 11px; 
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%; 
+        text-align: center; 
+        margin-bottom: 10px; 
+    }
+    .about-content {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .about-image {
+        flex: auto; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .about-text {
+        text-align: left; 
+    }
+}
