@@ -724,3 +724,22 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Modal Sale Note Styles --- */
+.sale-auto-note {
+    display: none; /* Hidden by default until JavaScript turns it on */
+    font-size: 0.75rem;
+    color: #888888;
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+#announcement-banner {
+    background-color: var(--dark-accent, #6d1c5e);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}

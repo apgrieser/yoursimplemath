@@ -1,0 +1,18 @@
+{
+  "activeSale": {
+    "enabled": true,
+    "saleName": "Back to School Sale!",
+    "appliedCategory": "all",
+    "discountPercentage": 20,
+    "promoCode": "BTS2026",
+    "bannerMessage": "🎉 Back to School Sale! 20% off all resources. DISCOUNT IS AUTOMATICALLY APPLIED AT CHECKOUT!",
+    "saleStartDate": "2026-08-01",
+    "saleStartTime": "00:00",
+    "saleEndDate": "2026-08-31",
+    "saleEndTime": "23:59"
+  },
+  "defaultPrices": {
+    "worksheet": 3.50,
+    "poster": 2.50
+  }
+}

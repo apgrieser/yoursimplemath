@@ -2,6 +2,8 @@
   {
     "id": "bundle-01",
     "title": "Algebra 1 Foundations | Pre-Algebra Review Bundle",
+    "productType": "bundle",
+    "basePrice": 20.00,
     "description": "Review fundamental Pre-Algebra skills at the beginning of the school year before tackling Algebra 1! Includes 5 differentiated riddle worksheet sets and 3 classroom anchor chart posters.",
     "image": "./images/Alg1PreAlgReviewBundle.png",
     "imageAlt": "Algebra 1 Foundations Pre-Algebra Review Bundle",
@@ -22,6 +24,8 @@
   {
     "id": "free-01",
     "title": "Free Sample Worksheet Set!",
+    "productType": "worksheet",
+    "basePrice": 0,
     "description": "Want to try it out for free first? Get a free worksheet set!",
     "image": "/images/FreeWorksheetSet.png",
     "imageAlt": "Order of Operations GEMS Poster Preview",
