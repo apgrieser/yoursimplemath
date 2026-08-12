@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Simple Math | High School Math Resources</title>
+    <title>Your Simple Math | High School Math Resources & Worksheets</title>
+    
+    <!-- SEO & Social Meta Tags -->
+    <meta name="description" content="Differentiated, self-checking algebra worksheets, riddle practice sets, and printable classroom posters for high school math teachers. Instant feedback and easy lesson planning.">
+    <meta name="keywords" content="high school math worksheets, algebra 1 worksheets, differentiated math practice, printable classroom posters, math riddles, anchor charts">
+    <meta name="author" content="Your Simple Math">
+    <link rel="canonical" href="https://yoursimplemath.com">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Your Simple Math | High School Math Resources">
+    <meta property="og:description" content="Differentiated high school math worksheets, self-checking riddles, and printable classroom posters.">
+    <meta property="og:image" content="https://yoursimplemath.com/images/logo.png">
+    <meta property="og:url" content="https://yoursimplemath.com">
+
+    <!-- Stylesheets & Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Structured Data / JSON-LD for AI Search Engines & Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://yoursimplemath.com/#organization",
+          "name": "Your Simple Math",
+          "url": "https://yoursimplemath.com",
+          "logo": "https://yoursimplemath.com/images/logo.png",
+          "sameAs": [
+            "https://www.pinterest.com/yoursimplemath/",
+            "https://www.youtube.com/@YourSimpleMath/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://yoursimplemath.com/#website",
+          "url": "https://yoursimplemath.com",
+          "name": "Your Simple Math",
+          "publisher": { "@id": "https://yoursimplemath.com/#organization" }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -47,7 +89,7 @@
 
     <section id="resources" class="services-section container">
         <div class="card">
-            <h3>What We Offer</h3>
+            <h2>What We Offer</h2>
             <ul class="services-list">
                 <li><strong>Differentiated Practice:</strong> Three distinct levels of difficulty per topic to meet every student exactly where they are. Answer keys included.</li>
                 <li><strong>Self-Checking Riddles:</strong> Engaging puzzles that provide instant feedback—if the answer doesn't make sense, students know to review their work!</li>
@@ -64,13 +106,18 @@
     <!-- Product Catalog Section (Streamlined Grid) -->
     <section id="products" class="products-section container">
         <div class="card">
-            <h3>Resource Catalog</h3>
+            <h2>Resource Catalog</h2>
 
             <!-- JS will inject the filter buttons here -->
             <div id="category-filters" class="filter-container"></div>
             
             <!-- JavaScript will inject all product cards into this div -->
-            <div id="dynamic-product-grid" class="product-grid"></div>
+            <div id="dynamic-product-grid" class="product-grid">
+                <!-- Static Fallback for Crawlers & Non-JS Browsers -->
+                <noscript>
+                    <p>Explore high school math resources including Algebra 1 differentiated riddle worksheets, printable classroom posters, and anchor charts at Your Simple Math.</p>
+                </noscript>
+            </div>
 
         </div>
     </section>
@@ -92,7 +139,6 @@
                     
                     <div class="buy-wrapper">
                         <a id="modal-buy-btn" href="#" target="_blank" class="cta-button product-btn">Buy PDF</a>
-                        <!-- Add this new line directly below the button: -->
                         <span id="modal-sale-note" class="sale-auto-note"><em>*Sale discounts auto-applied at checkout</em></span>
                     </div>
 
@@ -103,7 +149,7 @@
     
     <section id="about" class="about-section container">
         <div class="card">
-            <h3>About</h3>
+            <h2>About</h2>
             <div class="about-content">
                 <div class="about-image">
                     <img src="./images/profile.png" alt="Creator of Your Simple Math" onerror="this.src='https://via.placeholder.com/400x400?text=Profile+Photo'">
