@@ -282,6 +282,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const isOnSale = card.getAttribute('data-onsale') === "true";
                 
                 modalBuyBtn.href = checkoutUrl;
+                modalBuyBtn.target = "_blank"; // Ensures modal buy button opens in a new tab
                 
                 if (isFree) {
                     modalBuyBtn.innerHTML = 'Buy — <strong>FREE</strong>!';
