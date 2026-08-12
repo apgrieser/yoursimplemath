@@ -10,9 +10,9 @@
 test*
 
 # Exceptions for specific PDFs
-!./samples/FreeYourSimpleMath8.5x11POSTERS.pdf
-!./samples/FreeYourSimpleMath18x24POSTERS.pdf 
-!./samples/FreeYourSimpleMathWorksheetSet.pdf 
+!samples/FreeYourSimpleMath8.5x11POSTERS.pdf
+!samples/FreeYourSimpleMath18x24POSTERS.pdf 
+!samples/FreeYourSimpleMathWorksheetSet.pdf 
 
 # Editor-specific files
 .vscode/
