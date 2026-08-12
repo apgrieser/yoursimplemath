@@ -82,9 +82,18 @@ document.addEventListener("DOMContentLoaded", () => {
                         finalPrice = (product.basePrice * multiplier).toFixed(2);
                         isOnSale = true;
                         
+                        // Ensure link ends with /checkout before adding query parameters
+                        let baseUrl = checkoutUrl.trim();
+                        if (baseUrl.endsWith('/')) {
+                            baseUrl = baseUrl.slice(0, -1);
+                        }
+                        if (!baseUrl.endsWith('/checkout')) {
+                            baseUrl = `${baseUrl}/checkout`;
+                        }
+
                         // Auto-apply Payhip coupon
-                        const separator = checkoutUrl.includes('?') ? '&' : '?';
-                        checkoutUrl = `${checkoutUrl}${separator}coupon=${activeSale.promoCode}`;
+                        const separator = baseUrl.includes('?') ? '&' : '?';
+                        checkoutUrl = `${baseUrl}${separator}coupon=${activeSale.promoCode}`;
                     }
                 }
 
