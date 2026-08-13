@@ -165,9 +165,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span class="sale-price"><strong>$${product.displayPrice}</strong></span>
                         <span class="original-price" style="text-decoration: line-through; color: #888888;">$${product.originalPrice}</span>
                         <span class="sale-badge"><strong>SALE</strong></span>
+                        <div class="promo-reminder" style="font-size: 0.75rem; color: var(--contact-color); margin-top: 6px; margin-bottom: 16px; font-weight: 500;">
+                            *Use code <span class="copy-promo-code" data-code="${activeSale.promoCode}" title="Click to copy">${activeSale.promoCode} <i class="fa-regular fa-copy"></i></span> at checkout!
+                        </div>
                     </div>
                 `;
-                buttonText = `Buy — <strong>$${product.displayPrice}</strong>`;
+                buttonText = `Buy — <strong>$${product.displayPrice}</strong>*`;
             } else {
                 priceHTML = `
                     <div class="price-container">
@@ -286,6 +289,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (modalSaleNote) modalSaleNote.style.display = 'none';
                 } else if (isOnSale) {
                     modalBuyBtn.innerHTML = `Buy PDF — <strong>$${price}</strong>`;
+                    if (modalSaleNote) {
+                        modalSaleNote.style.display = 'block';
+                        // Dynamically pull the promo code for the modal note
+                        modalSaleNote.innerHTML = `<em>*Must use code <span class="copy-promo-code" data-code="${activeSale.promoCode}" title="Click to copy">${activeSale.promoCode} <i class="fa-regular fa-copy"></i></span> at checkout for this price</em>`;
+                    }
                     if (modalSaleNote) modalSaleNote.style.display = 'block';
                 } else {
                     modalBuyBtn.innerHTML = `Buy PDF — $${price}`;
@@ -313,5 +321,36 @@ document.addEventListener("DOMContentLoaded", () => {
                 modal.close();
             }
         });
+    }
+});
+
+// 5. Global Copy-to-Clipboard Logic
+document.body.addEventListener('click', async (e) => {
+    const copyTrigger = e.target.closest('.copy-promo-code');
+    
+    if (copyTrigger) {
+        const codeToCopy = copyTrigger.getAttribute('data-code');
+        
+        try {
+            // Write the code to the user's system clipboard
+            await navigator.clipboard.writeText(codeToCopy);
+            
+            // Save original HTML to revert back
+            const originalHTML = copyTrigger.innerHTML;
+            
+            // Give visual feedback
+            copyTrigger.innerHTML = `Copied! <i class="fa-solid fa-check"></i>`;
+            copyTrigger.style.color = 'var(--secondary-color)'; 
+            
+            // Revert back to the code after 2 seconds
+            setTimeout(() => {
+                copyTrigger.innerHTML = originalHTML;
+                copyTrigger.style.color = ''; // Reset color
+            }, 2000);
+            
+        } catch (err) {
+            console.error('Failed to copy text: ', err);
+            copyTrigger.innerHTML = `Error <i class="fa-solid fa-xmark"></i>`;
+        }
     }
 });

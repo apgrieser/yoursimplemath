@@ -743,3 +743,20 @@ footer {
     font-size: 0.9rem;
     font-weight: 600;
 }
+
+/* --- Copy Promo Code Interactive Styles --- */
+.copy-promo-code {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.copy-promo-code:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-cream);
+}
