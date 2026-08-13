@@ -4,7 +4,7 @@
     "title": "Algebra 1 Foundations | Pre-Algebra Review Bundle",
     "productType": "bundle",
     "basePrice": 20.00,
-    "description": "Review fundamental Pre-Algebra skills at the beginning of the school year before tackling Algebra 1! Includes 5 differentiated riddle worksheet sets and 3 classroom anchor chart posters.",
+    "description": "Review fundamental Pre-Algebra skills at the beginning of the school year before tackling Algebra 1! Includes 5 differentiated riddle worksheet sets (15 different worksheets!) and 3 classroom anchor chart posters.",
     "image": "./images/Alg1PreAlgReviewBundle.png",
     "imageAlt": "Algebra 1 Foundations Pre-Algebra Review Bundle",
     "price": "20.00",
@@ -17,8 +17,8 @@
       "Printing": "Color & Ink-Saving B&W"
     },
     "qa": {
-      "question": "What skills are reviewed in this bundle?",
-      "answer": "Order of operations (GEMS), combining like terms, 1- & 2-step equations, multi-step equations, and absolute value inequalities."
+      "question": "Skills reviewed in this bundle:",
+      "answer": "Order of operations (GEMS), combining like terms, 1- & 2-step equations, multi-step equations, absolute value, and inequalities."
     }
   },
   {
@@ -39,8 +39,8 @@
       "Printing": "Color & Ink-Saving B&W"
     },
     "qa": {
-      "question": "Is there a no-risk way to try a worksheet set?",
-      "answer": "Yes! You can download a free sample worksheet set by selecting the button below!"
+      "question": "No-risk way to try a worksheet set:",
+      "answer": "You can download a free sample worksheet set covering the topic of two-step equations by selecting the button below!"
     }
   },
   {
@@ -61,8 +61,8 @@
       "Printing": "Color & Ink-Saving B&W"
     },
     "qa": {
-      "question": "Is there a no-risk way to get a poster set?",
-      "answer": "Yes! You can download a free sample poster set by selecting the button below!"
+      "question": "No-risk way to get a poster set",
+      "answer": "You can download a free sample poster covering the Real Number System by selecting the button below!"
     }
   }
 ]

@@ -744,6 +744,14 @@ footer {
     font-weight: 600;
 }
 
+.banner-format {
+    color: var(--dark-accent, #6d1c5e);
+}
+
+.banner-format:hover {
+    color: var(--dusty-slate-blue, #2f4457);
+}
+
 /* --- Copy Promo Code Interactive Styles --- */
 .copy-promo-code {
     cursor: pointer;
