@@ -3,6 +3,7 @@
     /* Official Brand Palette */
     --primary-color: #a595a2; /* Cranberry */
     --secondary-color: #B2B099; /* Muted Olive Green */
+    --free-sample-button-color: #524c0f; /* Muted Olive Green */
     --accent-color: #C48D83; /* Warm Terracotta Rose */
     --dark-accent: #6d1c5e; /* Soft Plum/Mauve */
     --sand-color: #D5B099; /* Warm Sand */
@@ -448,12 +449,13 @@ footer {
 }
 
 .secondary-button {
-    background-color: var(--secondary-color); 
+    background-color: var(--free-sample-button-color); 
     color: var(--white);
 }
 
 .secondary-button:hover {
-    background-color: #9c9a83;
+    background-color: #625a02;
+    /* color: black; */
 }
 
 /* --- Responsive Breakpoints --- */
